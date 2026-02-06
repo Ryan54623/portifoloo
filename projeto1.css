@@ -1,0 +1,26 @@
+.galeria{
+    margin: 2rem;
+    height: 40em;
+    gap: 0.5rem;
+    display: flex;
+}
+
+.galeria div{
+    flex: 1;
+    background-size: cover;
+    background-position: center top;
+    transition: all 1s cubic-bezier(.06,.97,.72,.21);
+}
+
+.galeria div:hover{
+    flex: 5;
+}
+
+.galeria:hover div:not(:hover){
+    filter: grayscale(100%);
+    filter: blur(5px);
+}
+
+body{
+    cursor: url("./R.cur"), auto;
+}
